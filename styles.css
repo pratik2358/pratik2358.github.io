@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 20px; /* Add horizontal padding to the body for margins */
+}
+
+/* Container for main content */
+.container {
+    max-width: 1200px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding inside the container */
+    background: #fff; /* Background color for the content area */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #5683af;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 140px; /* Adjust width as needed */
+    height: 140px; /* Adjust height as needed */
+    object-fit: cover;
+    margin-right: 20px; /* Space between photo and text */
+    margin-top: 0; /* Removes extra space at the top */
+}
+
+header div {
+    flex: 1;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0f7ff;
+}
