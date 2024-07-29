@@ -1,32 +1,13 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 0 20px; /* Add horizontal padding to the body for margins */
-}
-
-/* Container for main content */
-.container {
-    max-width: 1200px; /* Set a maximum width for the content */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Add padding inside the container */
-    background: #fff; /* Background color for the content area */
-    border-radius: 8px; /* Rounded corners for a softer look */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-}
-
 /* Header Styles */
 header {
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #5683af;
+    background-color: #244668;
     border-bottom: 1px solid #dee2e6;
 }
 
+/* Profile photo styling remains the same */
 .profile-photo {
     border-radius: 50%;
     width: 140px; /* Adjust width as needed */
@@ -36,10 +17,26 @@ header {
     margin-top: 0; /* Removes extra space at the top */
 }
 
+/* Container for name and position */
 header div {
     flex: 1;
 }
 
+/* Styling for the name */
+header h1 {
+    font-size: 1.5em; /* Adjust size as needed */
+    color: #e0eaf5; /* Light shade of text color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling for the position */
+header h2 {
+    font-size: 1.2em; /* Adjust size as needed */
+    color: #c9d9e8; /* Even lighter shade of text color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation styles remain the same */
 nav {
     margin-left: auto;
 }
