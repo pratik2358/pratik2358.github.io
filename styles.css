@@ -169,6 +169,12 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .gallery figure {
+        max-width: calc(33.333% - 20px);
+    }
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -198,12 +204,14 @@ footer {
         padding: 220px 20px 20px; /* Adjust padding for smaller screens */
     }
 
-    .gallery {
-        flex-direction: column;
-    }
-
     .gallery figure {
+        max-width: calc(50% - 20px);
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery figure {
         max-width: 100%;
     }
 }
