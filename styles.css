@@ -119,6 +119,12 @@ a:hover {
 
     iframe {
         width: 100%;
-        height: auto;
+        height: 500px; /* Increase height for better visibility */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    iframe {
+        height: 600px; /* Further increase the height for smaller screens */
     }
 }
