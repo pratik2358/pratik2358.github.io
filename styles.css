@@ -8,10 +8,13 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #2E3B4E; /* Dark grey-blue */
     color: white;
     padding: 20px;
-    text-align: center;
+    text-align: left; /* Align text to the left for better space utilization */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread items across the width */
 }
 
 header img.profile-photo {
@@ -21,20 +24,23 @@ header img.profile-photo {
 }
 
 header .header-text {
-    display: inline-block;
-    vertical-align: middle;
     margin-left: 20px;
+    flex-grow: 1; /* Allow the text to grow and utilize space */
+}
+
+header h1, header h2 {
+    margin: 5px 0; /* Reduce margin to make text more compact */
 }
 
 header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex; /* Flex layout for even spacing */
 }
 
 header nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 header nav ul li a {
@@ -48,8 +54,10 @@ header nav ul li a:hover {
     background-color: #444;
 }
 
-h1, h2 {
-    margin: 0;
+/* Section styling */
+section h3 {
+    font-size: 24px;
+    color: #2E3B4E; /* Same dark grey-blue color for section headers */
 }
 
 .container {
@@ -62,23 +70,10 @@ section {
     margin-bottom: 30px;
 }
 
-section h3 {
-    font-size: 24px;
-}
-
-ul {
-    padding: 0;
-}
-
-ul li {
-    list-style-type: none;
-    margin-bottom: 10px;
-}
-
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #2E3B4E; /* Footer matching the header */
     color: white;
 }
 
@@ -93,23 +88,26 @@ a:hover {
 
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
     header img.profile-photo {
         width: 100px;
         height: 100px;
     }
 
     header .header-text {
-        display: block;
-        text-align: center;
         margin-left: 0;
+        text-align: center;
     }
 
     header nav ul {
-        text-align: center;
+        flex-direction: column;
     }
 
     header nav ul li {
-        display: block;
         margin: 10px 0;
     }
 
@@ -119,12 +117,12 @@ a:hover {
 
     iframe {
         width: 100%;
-        height: 500px; /* Increase height for better visibility */
+        height: 500px;
     }
 }
 
 @media only screen and (max-width: 480px) {
     iframe {
-        height: 600px; /* Further increase the height for smaller screens */
+        height: 600px;
     }
 }
