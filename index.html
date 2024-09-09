@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography - Pratik Karmakar</title>
+    <title>Pratik Karmakar | PhD Student | NUS</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Pratik Karmakar's personal website - PhD Student at NUS, focused on Data Quality and Data Uncertainty Management.">
+    <meta name="keywords" content="Pratik Karmakar, PhD Student, Data Quality, Data Uncertainty, NUS, Research, Publications, Teaching, Photography">
+    <meta name="author" content="Pratik Karmakar">
+    <meta name="robots" content="index, follow">
 </head>
 
 <body>
@@ -18,38 +22,99 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html#home" aria-label="Home">Home</a></li>
-                <li><a href="index.html#research" aria-label="Research">Research</a></li>
-                <li><a href="index.html#publications" aria-label="Publications">Publications</a></li>
-                <li><a href="index.html#teaching" aria-label="Teaching">Teaching</a></li>
-                <li><a href="index.html#cv" aria-label="CV">CV</a></li>
-                <li><a href="index.html#contact" aria-label="Contact">Contact</a></li>
+                <li><a href="#home" aria-label="Home">Home</a></li>
+                <li><a href="#research" aria-label="Research">Research</a></li>
+                <li><a href="#publications" aria-label="Publications">Publications</a></li>
+                <li><a href="#teaching" aria-label="Teaching">Teaching</a></li>
+                <li><a href="#cv" aria-label="CV">CV</a></li>
+                <li><a href="#contact" aria-label="Contact">Contact</a></li>
                 <li><a href="photography.html" aria-label="Beyond Academic Works">Beyond Academic Works</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="photography">
-            <h3>Beyond Academic Works - Photography</h3>
-            <div class="photography-gallery">
-                <div class="photography-item">
-                    <img src="path_to_image1.jpg" alt="Photo 1">
-                    <a href="photo1_link" target="_blank">Photo 1 Name</a>
-                </div>
-                <div class="photography-item">
-                    <img src="path_to_image2.jpg" alt="Photo 2">
-                    <a href="photo2_link" target="_blank">Photo 2 Name</a>
-                </div>
-                <div class="photography-item">
-                    <img src="path_to_image3.jpg" alt="Photo 3">
-                    <a href="photo3_link" target="_blank">Photo 3 Name</a>
-                </div>
-                <div class="photography-item">
-                    <img src="path_to_image4.jpg" alt="Photo 4">
-                    <a href="photo4_link" target="_blank">Photo 4 Name</a>
-                </div>
-                <!-- Add more photographs in the same format -->
+    <main class="container">
+        <section id="home">
+            <p>Welcome to my page. I’m currently pursuing a PhD (Started in January, 2023) at the <strong>School of Computing, <a href="https://nus.edu.sg/" target="_blank" rel="noopener noreferrer">National University of Singapore</a></strong>. I am fortunate to be guided by <a href="https://www.comp.nus.edu.sg/cs/people/steph/" target="_blank" rel="noopener noreferrer"><strong>Prof. Stéphane Bressan</strong></a> and <a href="https://pierre.senellart.com/" target="_blank" rel="noopener noreferrer"><strong>Prof. Pierre Senellart</strong></a>, whose expertise helps shape my research in computing, data quality management, analytics etc.</p>
+            <p>I completed my M.Sc. in Big Data Analytics at the <a href="https://cs.rkmvu.ac.in/academics-msc-in-big-data-analytics-data-science/" target="_blank" rel="noopener noreferrer"><strong>Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI)</strong></a> in Belur, India in 2022, and my BE in Electrical Engineering from <a href="https://jadavpuruniversity.in/" target="_blank" rel="noopener noreferrer"><strong>Jadavpur University</strong></a>, Kolkata, India in 2018.</p>
+            <p>This site is a reflection of my research, publications, and teaching activities. I hope you find the information here useful and informative. Please feel free to reach out if you have any questions or if our work intersects.</p>
+        </section>
+
+        <section id="research">
+            <h3>Research</h3>
+            <p>My research is centered around Data Quality and Data Uncertainty Management, with a particular emphasis on probabilistic databases. In today's data-driven world, ensuring the quality and managing the uncertainty of data are crucial for the reliability and effectiveness of data-intensive applications.</p>
+            <p><strong>Probabilistic Databases:</strong> I explore techniques for handling uncertainty in data, which is essential for making accurate and reliable decisions in uncertain environments. Probabilistic databases provide a framework for modeling and querying uncertain data, and my work focuses on improving these systems to enhance their efficiency and applicability.</p>
+            <p><strong>Data Quality and Machine Learning/Artificial Intelligence:</strong> I investigate the impact of data quality on machine learning and artificial intelligence. High-quality data is fundamental for training effective models, and understanding how data imperfections affect model performance is a key aspect of my research. I work on methods to ensure that the data used in AI systems is accurate, complete, and relevant.</p>
+            <p><strong>Privacy-Preserving Machine Learning/Artificial Intelligence:</strong> Additionally, I have a keen interest in privacy-preserving techniques for machine learning and AI. As data privacy concerns grow, developing methods that protect sensitive information while still enabling meaningful analysis and model training is increasingly important. My research includes exploring approaches to achieve privacy without compromising the utility of machine learning models.</p>
+            <p>Through my research, I aim to advance the understanding and techniques related to data quality, uncertainty, and privacy, contributing to more robust and reliable data systems.</p>
+        </section>
+
+        <section id="publications">
+            <h3>Publications</h3>
+            <ul>
+                <li>
+                    <strong>Expected Shapley-Like Scores of Boolean Functions: Complexity and Applications to Probabilistic Databases</strong>
+                    <br>
+                    <em>PODS 2024</em>
+                    <br>
+                    Co-authors: Mikael Monet, Pierre Senellart, and Stéphane Bressan
+                    <br>
+                    <a href="https://arxiv.org/abs/2401.06493">Paper link</a> |
+                    <a href="PODS_presentation.pdf" target="_blank" rel="noopener noreferrer">Presentation link</a>
+                </li>
+                <li>
+                    <strong>Marich: A Query-efficient Distributionally Equivalent Model Extraction Attack using Public Data</strong>
+                    <br>
+                    <em>NeurIPS 2023</em>
+                    <br>
+                    Co-authors: Debabrota Basu
+                    <br>
+                    <a href="https://papers.nips.cc/paper_files/paper/2023/file/e5440ffceaf4831b5f98652b8a27ffde-Paper-Conference.pdf">Paper link</a> |
+                    <a href="marich_presentation.pdf" target="_blank" rel="noopener noreferrer">Presentation link</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="teaching">
+            <h3>Teaching</h3>
+            <p>As part of my PhD program, I have had the opportunity to assist and am still assisting Prof. Stéphane Bressan with the following courses:</p>
+            <ul>
+                <li>
+                    <strong>Data Management and Warehousing (BT5110)</strong>
+                    <br>
+                    <a href="https://nusmods.com/courses/BT5110/data-management-and-warehousing">Course Details</a>
+                </li>
+                <li>
+                    <strong>Database Applications Design and Tuning (CS4221/5421)</strong>
+                    <br>
+                    <a href="https://nusmods.com/courses/CS4221/database-applications-design-and-tuning">Course Details</a>
+                </li>
+                <li>
+                    <strong>Maritime Data Analytics (MTM5004)</strong>
+                    <br>
+                    <a href="https://nusmods.com/courses/MTM5004/maritime-data-analytics">Course Details</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="cv">
+            <h3>CV</h3>
+            <p><a href="Pratik_Karmakar_CV.pdf" target="_blank" rel="noopener noreferrer">View/Download my CV</a></p>
+        </section>
+
+        <section id="contact">
+            <h3>Contact</h3>
+            <p>You can reach me via email at:</p>
+            <ul>
+                <li><a href="mailto:pratik.karmakar@u.nus.edu">pratik.karmakar@u.nus.edu</a></li>
+                <li><a href="mailto:pratik.karmakar@cnrsatcreate.sg">pratik.karmakar@cnrsatcreate.sg</a></li>
+            </ul>
+        </section>
+
+        <section id="calendar">
+            <h3>My Calendar</h3>
+            <div class="calendar-container">
+                <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&ctz=Asia%2FSingapore&bgcolor=%237986CB&mode=WEEK&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&src=cGtwcmF0aWtrYXJtYWthckBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB&color=%2333B679" style="border:solid 1px #777" width="600" height="400" frameborder="0" scrolling="no"></iframe>
             </div>
         </section>
     </main>

@@ -86,66 +86,43 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Photography page styling */
-.photography-gallery {
-    display: flex;
-    justify-content: center; /* Center the entire gallery */
-    flex-wrap: wrap;
-    gap: 20px; /* Add space between the items */
-    padding: 20px; /* Padding around the gallery */
-}
-
-.photography-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 180px; /* Set a consistent max-width for the images */
-}
-
-.photography-item img {
-    width: 100%;
-    height: 150px; /* Set a fixed height for consistency */
-    border-radius: 5px;
-    border: 2px solid #2E3B4E;
-    object-fit: cover; /* Ensure images fit the container without distortion */
-}
-
-.photography-item a {
-    margin-top: 10px;
-    color: #2E3B4E;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-}
-
-.photography-item a:hover {
-    color: #555;
-}
-
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
-    .photography-item {
-        max-width: 150px; /* Reduce size for smaller screens */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .photography-item {
-        max-width: 120px; /* Further reduce size for very small screens */
+    header {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
     }
 
-    .photography-item img {
-        height: 120px; /* Adjust the image height for smaller screens */
+    header img.profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    header .header-text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 500px;
     }
 }
 
 @media only screen and (max-width: 480px) {
     iframe {
         height: 600px;
-    }
-
-    .photography-item img {
-        width: 120px; /* Further reduce the size of images for smaller screens */
     }
 }
