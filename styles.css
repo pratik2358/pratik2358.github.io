@@ -86,6 +86,35 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Photography page styling */
+.photography-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the images */
+    gap: 20px; /* Add space between images */
+    margin: 20px 0;
+}
+
+.photography-item {
+    display: flex;
+    flex-direction: column; /* Stack image and name vertically */
+    align-items: center; /* Center the text and image */
+}
+
+.photography-item img {
+    width: 200px;
+    height: auto; /* Adjust height to maintain aspect ratio */
+    border: 2px solid #2E3B4E;
+    border-radius: 5px; /* Add slight rounding to the image corners */
+}
+
+.photography-item a {
+    margin-top: 10px;
+    text-align: center;
+    color: #2E3B4E;
+    font-weight: bold;
+}
+
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
     header {
