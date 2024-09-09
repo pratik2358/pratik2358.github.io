@@ -102,8 +102,9 @@ a:hover {
 }
 
 .photography-item img {
-    width: 200px;
-    height: auto; /* Adjust height to maintain aspect ratio */
+    max-width: 100%; /* Make sure images don't exceed their container */
+    width: 150px; /* Set a fixed width for the images */
+    height: auto; /* Keep aspect ratio */
     border: 2px solid #2E3B4E;
     border-radius: 5px; /* Add slight rounding to the image corners */
 }
@@ -153,5 +154,9 @@ a:hover {
 @media only screen and (max-width: 480px) {
     iframe {
         height: 600px;
+    }
+
+    .photography-item img {
+        width: 120px; /* Further reduce the size of images for smaller screens */
     }
 }
