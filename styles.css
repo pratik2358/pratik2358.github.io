@@ -87,33 +87,54 @@ a:hover {
 }
 
 /* Photography page styling */
+/* Photography page styling */
 .photography-gallery {
     display: flex;
+    justify-content: space-around; /* Spread items evenly across the row */
     flex-wrap: wrap;
-    justify-content: center; /* Center the images */
-    gap: 20px; /* Add space between images */
+    gap: 20px;
     margin: 20px 0;
 }
 
 .photography-item {
     display: flex;
-    flex-direction: column; /* Stack image and name vertically */
-    align-items: center; /* Center the text and image */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px; /* Constrain the image width */
 }
 
 .photography-item img {
-    max-width: 100%; /* Make sure images don't exceed their container */
-    width: 150px; /* Set a fixed width for the images */
-    height: auto; /* Keep aspect ratio */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
     border: 2px solid #2E3B4E;
-    border-radius: 5px; /* Add slight rounding to the image corners */
+    object-fit: cover; /* Ensure images fill the container without distortion */
 }
 
 .photography-item a {
     margin-top: 10px;
-    text-align: center;
     color: #2E3B4E;
     font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.photography-item a:hover {
+    color: #555;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .photography-item {
+        max-width: 120px; /* Reduce size on smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .photography-item {
+        max-width: 100px; /* Further reduce size for very small screens */
+    }
 }
 
 /* Responsive Design */
