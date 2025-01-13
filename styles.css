@@ -28,6 +28,10 @@ header .header-text {
     flex-grow: 1; /* Allow the text to grow and utilize space */
 }
 
+header h2 {
+    font-size: 20px; /* Adjust the size as needed */
+}
+
 header h1, header h2 {
     margin: 5px 0; /* Reduce margin to make text more compact */
 }
