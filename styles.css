@@ -34,7 +34,7 @@ header h1 {
 
 header h2 {
     margin: 5px 0; /* Reduce margin to make text more compact */
-    font-size: 15px; /* Adjust the size as needed */
+    font-size: 10px; /* Adjust the size as needed */
 }
 
 header nav ul {
