@@ -30,6 +30,7 @@ header .header-text {
 
 header h1 {
     margin: 5px 0; /* Reduce margin to make text more compact */
+    font-size: 20px; /* Adjust the size as needed */
 }
 
 header h2 {
