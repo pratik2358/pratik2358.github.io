@@ -12,11 +12,11 @@
   --surface-2: #151b22;
   --text: #e7ebf3;
   --muted: #a8b2c3;
-  --accent: #2E3B4E; /* dark grey-blue */
-  --accent-2: #5b7ab3;
+  --accent: #84a3d1; /* dark grey-blue */
+  --accent-2: #7ca3eb;
   --ring: rgba(91, 122, 179, .45);
   --shadow: 0 8px 24px rgba(0,0,0,.35);
-  --radius: 16px;
+  --radius: 25px;
 }
 
 @media (prefers-color-scheme: light){
@@ -66,7 +66,7 @@ body{
   top: 0;
   z-index: 50;
   backdrop-filter: blur(8px);
-  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  background: color-mix(in srgb, var(--bg) 50%, transparent);
   border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
 }
 
@@ -80,8 +80,8 @@ body{
 }
 
 .profile-photo{
-  inline-size: 88px;
-  block-size: 88px;
+  inline-size: 150px;
+  block-size: 150px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid color-mix(in srgb, var(--accent) 60%, transparent);
