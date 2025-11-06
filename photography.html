@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Photography | Pratik Karmakar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -22,26 +22,29 @@
           PhD Student • School of Computing • National University of Singapore<br/>
           DesCartes Project at CNRS@Create, Singapore
         </p>
+        <p class="subtitle tagline">
+          <span class="typewriter-static">Street & Travel Photography</span>
+        </p>
       </div>
     </div>
 
     <nav class="site-nav" aria-label="Primary">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#research">Research</a></li>
-        <li><a href="index.html#publications">Publications</a></li>
-        <li><a href="index.html#demo">Demonstration</a></li>
-        <li><a href="index.html#awards">Awards</a></li>
-        <li><a href="index.html#teaching">Teaching</a></li>
-        <li><a href="index.html#cv">CV</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="photography.html">Beyond Academic Works</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#research" class="nav-link">Research</a></li>
+        <li><a href="index.html#publications" class="nav-link">Publications</a></li>
+        <li><a href="index.html#demo" class="nav-link">Demonstration</a></li>
+        <li><a href="index.html#awards" class="nav-link">Awards</a></li>
+        <li><a href="index.html#teaching" class="nav-link">Teaching</a></li>
+        <li><a href="index.html#cv" class="nav-link">CV</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li><a href="photography.html" class="nav-link">Beyond Academic Works</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="container">
-    <section id="photography" class="card">
+    <section id="photography" class="card reveal">
       <h3>Photography</h3>
       <p>I have a deep passion for street photography, capturing the vibrant and spontaneous moments of everyday life. Below, you'll find a selection of my work that reflects my interest in this art form:</p>
 
@@ -98,22 +101,37 @@
     <p>&copy; <span id="year"></span> Pratik Karmakar</p>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
   <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
   <script>
-    const btn = document.getElementById('backToTop');
-    const toggleBtn = () => {
-      if (window.scrollY > 300) btn.classList.add('show');
-      else btn.classList.remove('show');
-    };
-    window.addEventListener('scroll', toggleBtn);
-    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-    toggleBtn();
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Back-to-top behavior
+    const backToTop = document.getElementById('backToTop');
+    function toggleBackToTop() {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    }
+    window.addEventListener('scroll', toggleBackToTop);
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    toggleBackToTop();
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.card.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
-</html>
-
 </html>

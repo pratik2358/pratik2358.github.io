@@ -7,9 +7,9 @@
   <meta name="description" content="Pratik Karmakar's personal website - PhD Student at NUS, focused on Data Valuation, Probabilistic Databases, and Uncertainty Management.">
   <meta name="author" content="Pratik Karmakar">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -24,32 +24,36 @@
           PhD Student • School of Computing • National University of Singapore<br/>
           DesCartes Project at CNRS@Create, Singapore
         </p>
+        <!-- Typewriter topics based on existing research themes -->
+        <p class="subtitle tagline">
+          <span id="typewriter" class="typewriter"></span>
+        </p>
       </div>
     </div>
 
     <nav class="site-nav" aria-label="Primary">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#demo">Demonstration</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="photography.html">Beyond Academic Works</a></li>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        <li><a href="#demo" class="nav-link">Demonstration</a></li>
+        <li><a href="#teaching" class="nav-link">Teaching</a></li>
+        <li><a href="#awards" class="nav-link">Awards</a></li>
+        <li><a href="#cv" class="nav-link">CV</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="photography.html" class="nav-link">Beyond Academic Works</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="container">
-    <section id="home" class="card">
+    <section id="home" class="card reveal">
       <p>Welcome to my page. I’m currently pursuing a PhD (Started in January, 2023) at the <strong>School of Computing, <a href="https://nus.edu.sg/" target="_blank" rel="noopener noreferrer">National University of Singapore</a></strong>. I am fortunate to be guided by <a href="https://www.comp.nus.edu.sg/cs/people/steph/" target="_blank" rel="noopener noreferrer"><strong>Late Prof. Stéphane Bressan</strong></a>, <a href="https://pierre.senellart.com/" target="_blank" rel="noopener noreferrer"><strong>Prof. Pierre Senellart</strong></a> and <a href="https://www.comp.nus.edu.sg/cs/people/tankl/" target="_blank" rel="noopener noreferrer"><strong>Prof. Tan Kian Lee</strong></a>, whose expertise helps shape my research in computing, data quality management, analytics etc.</p>
       <p>I completed my M.Sc. in Big Data Analytics from <a href="https://cs.rkmvu.ac.in/academics-msc-in-big-data-analytics-data-science/" target="_blank" rel="noopener noreferrer"><strong>Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI)</strong></a> in Belur, India in 2022, and my BE in Electrical Engineering from <a href="https://jadavpuruniversity.in/" target="_blank" rel="noopener noreferrer"><strong>Jadavpur University</strong></a>, Kolkata, India in 2018.</p>
       <p>This site is a reflection of my research, publications, and teaching activities. I hope you find the information here useful and informative. Please feel free to reach out if you have any questions or if our work intersects.</p>
     </section>
 
-    <section id="research" class="card">
+    <section id="research" class="card reveal">
       <h3>Research</h3>
       <p>My research is centered around Data Quality and Data Uncertainty Management, with a particular emphasis on probabilistic databases. In today's data-driven world, ensuring the quality and managing the uncertainty of data are crucial for the reliability and effectiveness of data-intensive applications.</p>
       <p><strong>Probabilistic Databases:</strong> I explore techniques for handling uncertainty in data, which is essential for making accurate and reliable decisions in uncertain environments. Probabilistic databases provide a framework for modeling and querying uncertain data, and my work focuses on improving these systems to enhance their efficiency and applicability.</p>
@@ -58,7 +62,7 @@
       <p>Through my research, I aim to advance the understanding and techniques related to data quality, uncertainty, and privacy, contributing to more robust and reliable data systems.</p>
     </section>
 
-    <section id="publications" class="card">
+    <section id="publications" class="card reveal">
       <h3>Publications</h3>
       <ul class="list">
         <li>
@@ -91,7 +95,7 @@
       </ul>
     </section>
 
-    <section id="demo" class="card">
+    <section id="demo" class="card reveal">
       <h3>Demonstration</h3>
       <ul class="list">
         <li>
@@ -104,7 +108,7 @@
       </ul>
     </section>
 
-    <section id="teaching" class="card">
+    <section id="teaching" class="card reveal">
       <h3>Teaching</h3>
       <p>As part of my PhD program, I have had the opportunity to assist Prof. Stéphane Bressan, Adi Yoga Sidi Prabawa and Prof. Lee Mong Li with the following courses:</p>
       <ul class="list">
@@ -133,7 +137,7 @@
       </ul>
     </section>
 
-    <section id="awards" class="card">
+    <section id="awards" class="card reveal">
       <h3>Awards</h3>
       <ul class="list">
         <li>
@@ -146,12 +150,12 @@
       </ul>
     </section>
 
-    <section id="cv" class="card">
+    <section id="cv" class="card reveal">
       <h3>CV</h3>
       <p><a class="button" href="Pratik_Karmakar_CV.pdf" target="_blank" rel="noopener noreferrer"><strong>View/Download my CV</strong></a></p>
     </section>
 
-    <section id="contact" class="card">
+    <section id="contact" class="card reveal">
       <h3>Contact</h3>
       <p>You can reach me via email at:</p>
       <ul class="list">
@@ -160,7 +164,7 @@
       </ul>
     </section>
 
-    <section id="calendar" class="card">
+    <section id="calendar" class="card reveal">
       <h3>My Calendar</h3>
       <div class="calendar-container">
         <iframe title="Google Calendar"
@@ -174,23 +178,111 @@
     <p>&copy; <span id="year"></span> Pratik Karmakar</p>
   </footer>
 
-  <script>
-    // Set current year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
   <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
   <script>
-    const btn = document.getElementById('backToTop');
-    const toggleBtn = () => {
-      if (window.scrollY > 300) btn.classList.add('show');
-      else btn.classList.remove('show');
-    };
-    window.addEventListener('scroll', toggleBtn);
-    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-    toggleBtn();
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('.site-nav a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const targetId = link.getAttribute('href');
+        if (!targetId || !targetId.startsWith('#')) return;
+        e.preventDefault();
+        const target = document.querySelector(targetId);
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 120,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Back-to-top visibility + behavior
+    const backToTop = document.getElementById('backToTop');
+    function toggleBackToTop() {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    }
+    window.addEventListener('scroll', toggleBackToTop);
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    toggleBackToTop();
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.card.reveal').forEach(el => observer.observe(el));
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('main section[id]');
+    const navLinks = document.querySelectorAll('.site-nav .nav-link');
+    function setActiveLink() {
+      let currentId = null;
+      const offset = 140;
+      sections.forEach(section => {
+        const top = section.offsetTop - offset;
+        if (window.scrollY >= top) {
+          currentId = section.id;
+        }
+      });
+      navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#') && href.slice(1) === currentId) {
+          link.classList.add('active');
+        } else if (href && href.startsWith('#')) {
+          link.classList.remove('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', setActiveLink);
+    setActiveLink();
+
+    // Typewriter for topics (uses themes already present in your content)
+    const typewriterEl = document.getElementById('typewriter');
+    if (typewriterEl) {
+      const topics = [
+        'Data Quality & Uncertainty Management',
+        'Probabilistic Databases',
+        'Data Valuation & Provenance',
+        'Privacy-Preserving Machine Learning'
+      ];
+      let topicIndex = 0;
+      let charIndex = 0;
+      let deleting = false;
+
+      function type() {
+        const current = topics[topicIndex];
+        if (!deleting) {
+          typewriterEl.textContent = current.slice(0, ++charIndex);
+          if (charIndex === current.length) {
+            deleting = true;
+            setTimeout(type, 1200);
+            return;
+          }
+        } else {
+          typewriterEl.textContent = current.slice(0, --charIndex);
+          if (charIndex === 0) {
+            deleting = false;
+            topicIndex = (topicIndex + 1) % topics.length;
+          }
+        }
+        setTimeout(type, deleting ? 40 : 80);
+      }
+      type();
+    }
   </script>
 </body>
-</html>
-
 </html>
